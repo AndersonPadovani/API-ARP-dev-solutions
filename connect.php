@@ -14,5 +14,4 @@ class DB{
         }     
     }
 }
-new DB();
 ?>
