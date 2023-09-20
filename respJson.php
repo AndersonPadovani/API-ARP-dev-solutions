@@ -5,13 +5,13 @@ class RespJson{
     private $httpStatusCode;
 
     public function __construct(){
+        $this->httpStatusCode = 200;
+
         $this->dataResponse["apiName"] = "ARP Dev Solutions";
         $this->dataResponse["apiVersion"] = "1.0.0";
-        $this->dataResponse["apiStatusCode"] = 200;
+        $this->dataResponse["apiStatusCode"] = $this->httpStatusCode;
         $this->dataResponse["apiStatus"] = "STATUS OK";   
-        $this->dataResponse["apiResp"] = [];  
-        
-        $this->httpStatusCode = 200;
+        $this->dataResponse["apiResp"] = ["status"];       
     }
 
     public function setApiResp($value){
