@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/json');
 
 class RespJson{
     private $dataResponse;
@@ -27,6 +28,7 @@ class RespJson{
     }
 
     public function sendResponse(){
+        
         http_response_code($this->httpStatusCode);
         echo json_encode($this->dataResponse);
     }
