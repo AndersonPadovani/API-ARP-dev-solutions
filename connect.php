@@ -1,6 +1,6 @@
 <?php
 class DB{
-    public static function __construct(){
+    public function __construct(){
         try{
             $varConfig = require_once "./config.php";
 
